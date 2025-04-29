@@ -1,0 +1,87 @@
+:root {
+    --second-bg-color: #202020;
+    --text-color: #ffffff;
+    --ann-color: #c7c6d3;
+  }
+
+.contact-form {
+    width: 100%;
+    max-width: 600px;
+    display: grid;
+    gap: 1.2rem;
+    position: absolute;
+    right: 5%;
+    top: 30%;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    border: none;
+    outline: none;
+    padding: 17px;
+    font-size: 0.9rem;
+    background: var(--second-bg-color);
+    color: var(--text-color);
+    border-radius: 0.6rem;
+  }
+  
+  form input::placeholder,
+  form textarea::placeholder {
+    color: var(--ann-color);
+    font-size: 15px;
+  }
+  
+  .buttn {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(45deg, #0ce39a, #69007f, #fc0987);
+    padding: 14px 25px;
+    border-radius: 10px;
+    font-size: 1.25em;
+    cursor: pointer;
+    width: 30%;
+  }
+  
+  .buttn span {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .buttn::before {
+    content: "";
+    position: absolute;
+    inset: 1px;
+    background: #272727;
+    border-radius: 9px;
+    transition: 0.5s;
+  }
+  
+  .buttn:hover::before {
+    opacity: 0.7;
+  }
+  
+  .buttn::after {
+    content: "";
+    position: absolute;
+    inset: 0px;
+    background: linear-gradient(45deg, #0ce39a, #69007f, #fc0987);
+    border-radius: 9px;
+    transition: 0.5s;
+    opacity: 0;
+    filter: blur(20px);
+  }
+  
+  .buttn:hover:after {
+    opacity: 1;
+  }
+  
+  .footer {
+    padding: 20px 14%;
+    background: transparent;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+  }
