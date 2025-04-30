@@ -8,7 +8,17 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="ad.css" />
     <link rel="stylesheet" href="email.css" />
-    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="form.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <img class="image-gradient" src="gradient.png" alt="" />
@@ -20,14 +30,29 @@
           &wedbar;SH
         </h1>
         <nav>
-          <a data-aos="fade-down" data-aos-duration="1500" onclick="window.scrollTo({top:0,behavior:'smooth'})">HOME</a>
-          <a data-aos="fade-down" data-aos-duration="2000" onclick="scrolltoview('about')"
+          <a
+            data-aos="fade-down"
+            data-aos-duration="1500"
+            onclick="window.scrollTo({top:0,behavior:'smooth'})"
+            >HOME</a
+          >
+          <a
+            data-aos="fade-down"
+            data-aos-duration="2000"
+            onclick="scrolltoview('about')"
             >ABOUT ME</a
           >
-          <a data-aos="fade-down" data-aos-duration="2500" onclick="scrolltoview('services')">
+          <a
+            data-aos="fade-down"
+            data-aos-duration="2500"
+            onclick="scrolltoview('services')"
+          >
             SERVICES
           </a>
-          <a data-aos="fade-down" data-aos-duration="3000" onclick="scrolltoview('portfolio')"
+          <a
+            data-aos="fade-down"
+            data-aos-duration="3000"
+            onclick="scrolltoview('portfolio')"
             >PROJECTS</a
           >
         </nav>
@@ -149,19 +174,23 @@
         <h1 data-aos="fade-down" data-aos-duration="1500" data-aos-delay="200">
           ABOUT ME
         </h1>
-        <p
-          data-aos="fade-zoom-in"
-          data-aos-delay="300"
-          data-aos-duration="3500"
+        <div
+          data-aos="fade-zoom-out"
+          data-aos-delay="800"
+          data-aos-duration="4000"
+          class="asdf"
         >
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis
-          cupiditate, saepe libero blanditiis in atque nihil, quisquam tempore
-          quasi maxime quibusdam sit consectetur facilis. Quis eaque ipsam
-          officiis, fuga aspernatur dolor rem dolorum tempora amet quas
-          reiciendis laboriosam! Facere pariatur laudantium porro odio dolore
-          harum cupiditate repellat temporibus! Iure facere alias qui et omnis
-          ex architecto.
-        </p>
+          <h2>
+            I AM <span style="color: goldenrod">ASHWIN</span>, I AM A <br />
+            <span class="inpiu"></span>
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas et
+            facilis fugit! Esse obcaecati dolorem omnis cumque ex asperiores,
+            rem maiores minima modi quibusdam, iste nostrum laudantium velit
+            eaque error.
+          </p>
+        </div>
       </div>
       <spline-viewer
         data-aos="fade-left"
@@ -273,16 +302,16 @@
                       <div class="cyber-lines">
                         <span></span><span></span><span></span><span></span>
                       </div>
-                      <p id="prompt">HOVER ME</p>
-                      <div class="title">CYBER<br />CARD</div>
+                      <p id="prompt">GRAPH DS</p>
+                      <div class="title">SOCIAL<br />NET</div>
                       <div class="glowing-elements">
                         <div class="glow-1"></div>
                         <div class="glow-2"></div>
                         <div class="glow-3"></div>
                       </div>
                       <div class="subtitle">
-                        <span>INTERACTIVE</span>
-                        <span class="highlight">3D EFFECT</span>
+                        <span>HOVER</span>
+                        <span class="highlight">TO SEE</span>
                       </div>
                       <div class="card-particles">
                         <span></span><span></span><span></span> <span></span
@@ -600,11 +629,7 @@
 
     <section class="about" id="email">
       <div class="mail">
-        <h1
-          data-aos="fade-left"
-          data-aos-delay="300"
-          data-aos-duration="1500"
-        >
+        <h1 data-aos="fade-left" data-aos-delay="300" data-aos-duration="1500">
           CONTACT
         </h1>
       </div>
@@ -703,9 +728,18 @@
       type="module"
       src="https://unpkg.com/@splinetool/viewer@latest/build/spline-viewer.js"
     ></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+    <script>
+      var typed = new Typed(".inpiu", {
+        strings: ["WEB DEVELOPER.", "STUDENT.", "& YOUR DAD."],
+        typeSpeed: 120,
+        backSpeed: 70,
+        loop: true,
+      });
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="x.js"></script>
