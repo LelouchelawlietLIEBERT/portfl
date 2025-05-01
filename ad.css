@@ -35,10 +35,11 @@
   
   #prompt {
     bottom: 100px;
+    top: 10%;
     left: 50%;
     transform: translateX(-50%);
     z-index: 20;
-    font-size: 16px;
+    font-size: 2rem;
     font-weight: 600;
     letter-spacing: 2px;
     transition: 300ms ease-in-out;
@@ -47,11 +48,11 @@
     color: rgba(255, 255, 255, 0.7);
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
   }
-  
   .title {
     opacity: 0;
     transition: 300ms ease-in-out;
     position: absolute;
+    top: 2%;
     font-size: 28px;
     font-weight: 800;
     letter-spacing: 4px;
@@ -68,6 +69,22 @@
       0 0 20px rgba(92, 103, 255, 0.3);
   }
   
+  .promptp{
+    -webkit-text-fill-color: whitesmoke;
+    font-size: 1.2rem;
+    margin: 1rem;
+    margin-top: 10%;
+    text-align: center;
+  }
+
+  .tracker:hover ~ #card #prt{
+    opacity: 0;
+  }
+
+  .tracker:hover ~ #card #primg{
+    display: none;
+  }
+
   .subtitle {
     position: absolute;
     bottom: 40px;
@@ -236,7 +253,7 @@
     cursor: pointer;
   }
   
-  .tracker:hover ~ #card #prompt {
+  .tracker:hover ~ #card #prompt{
     opacity: 0;
   }
   
